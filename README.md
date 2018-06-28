@@ -1,6 +1,6 @@
-# This repository converts the dialogflow export into RASA format
+## This repository converts the dialogflow export into RASA format
 
-## Steps to prepare the files:
+### Steps to prepare the files:
 
 - Keep the dialogflow export in the `dialogflow` folder.
 
@@ -14,7 +14,7 @@
 
 - The rasa_core files are ready.
 
-## Steps for training:
+### Steps for training:
 
 - `python driver.py train-nlu`
 
@@ -22,6 +22,6 @@
 
 - These prepares the NLU and core models.
 
-## Steps to run the agent:
+### Steps to run the agent:
 
 - `python driver.py run`
