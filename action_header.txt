@@ -8,5 +8,6 @@ from rasa_core.events import SlotSet
 from rasa_core.channels.direct import CollectingOutputChannel
 
 from common import command_sanitizer
+from common import out_context_set
 
 

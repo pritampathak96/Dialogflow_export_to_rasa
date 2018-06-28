@@ -1,7 +1,28 @@
+import os
+import json
+import fnmatch
 
 def command_sanitizer(text):
     text = text.translate ({ord(c): "_" for c in "!@#$%^&*()[]{};:,./<>?\|`~-=_+ "})
     return text
+
+def out_context_set(action_name,df_directory="dialogflow"):
+    intent_directory = df_directory + "/intents/"
+    contexts = []
+    for file in os.listdir(intent_directory):
+        if fnmatch.fnmatchcase(file, "*_usersays_*.json"):
+            continue
+        with open(intent_directory + file, "r", encoding="utf8") as f:
+            try:
+                intent_file = json.load(f)
+                intent = Intent(intent_file)
+                if command_sanitizer(intent.action)==action_name:
+                    for context in intent.context_out:
+                        contexts.append(context.name)
+            except Exception as e:
+                logger.error("Error in loading {}\nError:{}".format(file,e))
+
+    return contexts
     
 
 class Intent:

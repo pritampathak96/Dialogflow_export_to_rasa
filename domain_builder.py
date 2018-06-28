@@ -204,7 +204,8 @@ def sanitize_text(text):
             dollar_flag = 0
             new_text = new_text + '}' + text[i]
         else:
-            new_text = new_text + text[i]
+            if text[i] in "!@#$%^&*()[]{};:,./<>?\|`~-=_+\" " or text[i].isalnum():
+                new_text = new_text + text[i]
     new_text = new_text.replace("\"","\\\"")
     return new_text
 
@@ -283,7 +284,16 @@ def write_domain_file(df_directory = "dialogflow",
     #print(action_str)
 
     with open(domain_file, 'w') as outfile:
-        outfile.write("slots:\n{}\nintents:\n{}\nentities:\n{}\ntemplates:\n{}\nactions:\n{}\n".format(slot_str,intent_str,entity_str,template_str,action_str))
+        if len(slot_str)>0:
+            outfile.write("slots:\n{}\n".format(slot_str))
+        if len(intent_str)>0:
+            outfile.write("intents:\n{}\n".format(intent_str))
+        if len(entity_str)>0:
+            outfile.write("entities:\n{}\n".format(entity_str))
+        if len(template_str)>0:
+            outfile.write("templates:\n{}\n".format(template_str))
+        if len(action_str)>0:
+            outfile.write("actions:\n{}\n".format(action_str))
 
 if __name__ == '__main__':
     write_domain_file()

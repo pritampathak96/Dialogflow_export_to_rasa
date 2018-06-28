@@ -3,7 +3,7 @@ from common import Intent
 from common import command_sanitizer
 from domain_builder import get_intent
 
-def build(df_directory = "dialogflow"):
+def build(df_directory):
     intents = get_intent(df_directory).intent_list
     with open("action_header.txt","r") as infile:
         header = infile.read()
@@ -21,6 +21,8 @@ def build(df_directory = "dialogflow"):
             data += "\n"
             outfile.write(data)
 
+def write_action_file(df_directory = "dialogflow"):
+    build(df_directory)
 
 if __name__ == '__main__':
-    build()
+    write_action_file()

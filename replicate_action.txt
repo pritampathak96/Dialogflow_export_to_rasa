@@ -32,6 +32,9 @@ class <action_name>(Action):
             else:
                 modified_text += text[i]
             i += 1
-        print("Original text: {}\nModified text: {}\n".format(text,modified_text))
         dispatcher.utter_message(modified_text)
-        return []
+        events = []
+        contexts = out_context_set(self.name)
+        for c in contexts:
+            events.append(SlotSet(c,1))
+        return events
