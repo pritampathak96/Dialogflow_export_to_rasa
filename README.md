@@ -12,6 +12,10 @@
     
     This creates the stories file in the data folder.
 
+- `python action_builder.py`
+
+    This creates the custom action classes in the `Action.py` script.
+
 - The rasa_core files are ready.
 
 ### Steps for training:
