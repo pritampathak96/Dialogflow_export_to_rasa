@@ -1,0 +1,37 @@
+class <action_name>(Action):
+    def name(self):
+        return '<action_name>'
+
+    @staticmethod
+    def required_fields():
+        return [
+                ]
+
+    def run(self, dispatcher, tracker, domain):
+        
+        template = dispatcher.retrieve_template("utter_"+"<action_name>")
+        text = template["text"]
+        modified_text = ""
+        i=0
+        while i < (len(text)):
+            if text[i]=='{':
+                j = i+1
+                slot = ""
+                while(text[j]!='}' and j<len(text)):
+                    slot += text[j]
+                    j += 1
+                print(slot)
+                if slot!= None:
+                    slot_val = tracker.get_slot(slot)
+                    if slot_val is None:
+                        dispatcher.utter_template(command_sanitizer("utter_{}_follow_up_{}".format(self.name(),slot)))
+                        return []
+                    else:    
+                        modified_text += tracker.get_slot(slot)
+                i = j
+            else:
+                modified_text += text[i]
+            i += 1
+        print("Original text: {}\nModified text: {}\n".format(text,modified_text))
+        dispatcher.utter_message(modified_text)
+        return []
