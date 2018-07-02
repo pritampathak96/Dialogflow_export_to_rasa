@@ -188,7 +188,7 @@ class get_action(object):
         for action in self.action:
             a_name = command_sanitizer(action)
             if "_follow_up_" not in a_name:
-                string += ("  - Action.{}\n".format(a_name))
+                string += ("  - action.{}\n".format(a_name))
             string += ("  - utter_{}\n".format(a_name))
         return string
 
