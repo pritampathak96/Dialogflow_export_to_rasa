@@ -160,7 +160,7 @@ class get_slot(object):
                 string += ("  {}:\n    type: {}\n".format(slot.name,slot.data_type))
         
         # Requested slot
-        # string += ("\t{}:\n\t\ttype: {}\n".format("requested_slot","unfeaturized"))
+        string += ("  {}:\n    type: {}\n".format("requested_slot","unfeaturized"))
 
         return string
 

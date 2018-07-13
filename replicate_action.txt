@@ -8,8 +8,23 @@ class <action_name>(Action):
                 ]
 
     def run(self, dispatcher, tracker, domain):
-        
+        index = "<index_name>"
         template = dispatcher.retrieve_template("utter_"+"<action_name>")
+
+        # Checking required parameters
+        intent = contain.index[index]
+        for entity in intent.entities:
+            if entity.required == True:
+                slot = entity.name
+                if slot!= None:
+                    slot_val = tracker.get_slot(slot)
+                    if slot_val is None:
+                        logger.info("Uttering the required parameter")
+                        dispatcher.utter_template(command_sanitizer("utter_{}_follow_up_{}".format(self.name(),slot)))
+                        events = []
+                        events.append(SlotSet("requested_slot", slot))
+                        return events
+                        
         text = template["text"]
         modified_text = ""
         i=0
@@ -20,14 +35,7 @@ class <action_name>(Action):
                 while(text[j]!='}' and j<len(text)):
                     slot += text[j]
                     j += 1
-                print(slot)
-                if slot!= None:
-                    slot_val = tracker.get_slot(slot)
-                    if slot_val is None:
-                        dispatcher.utter_template(command_sanitizer("utter_{}_follow_up_{}".format(self.name(),slot)))
-                        return []
-                    else:    
-                        modified_text += tracker.get_slot(slot)
+                modified_text += tracker.get_slot(slot)
                 i = j
             else:
                 modified_text += text[i]
@@ -37,4 +45,5 @@ class <action_name>(Action):
         contexts = out_context_set(self.name)
         for c in contexts:
             events.append(SlotSet(c,1))
+        events.append(SlotSet("requested_slot", None))
         return events

@@ -14,6 +14,7 @@ from rasa_core.channels.console import ConsoleInputChannel
 from rasa_core.events import SlotSet
 from rasa_core.interpreter import RasaNLUInterpreter
 
+from rasa_core.policies.fallback import FallbackPolicy
 from rasa_core.policies.keras_policy import KerasPolicy
 from rasa_core.policies.memoization import MemoizationPolicy
 from rasa_nlu.model import Metadata, Interpreter
@@ -25,7 +26,11 @@ logger = logging.getLogger(__name__)
 def train_dialogue_init(domain_file="./data/domain.yml",
                         model_path="models/dialogue",
                         training_data_file="./data/stories.md"):
-    agent = Agent(domain_file, policies = [MemoizationPolicy(), KerasPolicy()])
+
+    fallback = FallbackPolicy(fallback_action_name="input_unknown",
+                          core_threshold=0.1,
+                          nlu_threshold=0.3)
+    agent = Agent(domain_file, policies = [MemoizationPolicy(), KerasPolicy(), fallback])
 
     agent.train(
             training_data_file,
@@ -42,11 +47,15 @@ def train_dialogue_online(input_channel=ConsoleInputChannel(),
                           interpreter_path ="./models/nlu/default/current", 
                           domain_file="data/domain.yml", 
                           training_data_file='data/stories.md'):
+
+    fallback = FallbackPolicy(fallback_action_name="input_unknown",
+                          core_threshold=0.1,
+                          nlu_threshold=0.3)
     interpreter = RasaNLUInterpreter(interpreter_path)
-    agent = Agent(domain_file, policies=[MemoizationPolicy(), KerasPolicy()], interpreter=interpreter)
+    agent = Agent(domain_file, policies=[MemoizationPolicy(), KerasPolicy(), fallback], interpreter=interpreter)
     agent.train_online(training_data_file, 
                        input_channel=input_channel, 
-                       batch_size=50, epochs=200)
+                       batch_size=50, epochs=50)
     return agent
 
 
@@ -55,7 +64,7 @@ def train_nlu():
     from rasa_nlu import config
     from rasa_nlu.model import Trainer
 
-    training_data =load_data("dialogflow")
+    training_data =load_data("data/training_data.json")
     trainer = Trainer(config.load("config_spacy.yml"))
     trainer.train(training_data)
     model_directory = trainer.persist('models/nlu/', fixed_model_name="current")

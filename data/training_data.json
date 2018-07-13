@@ -1,0 +1,1260 @@
+﻿{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "create",
+        "intent": "account.action",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "create",
+            "entity": "account-action"
+          }
+        ]
+      },
+      {
+        "text": "create a new account",
+        "intent": "account.action",
+        "entities": []
+      },
+      {
+        "text": "I do not have an bank account",
+        "intent": "account.action",
+        "entities": []
+      },
+      {
+        "text": "how do I open an account",
+        "intent": "account.action",
+        "entities": []
+      },
+      {
+        "text": "account opening",
+        "intent": "account.action",
+        "entities": []
+      },
+      {
+        "text": "open a new account",
+        "intent": "account.action",
+        "entities": []
+      },
+      {
+        "text": "what are the steps for opening account",
+        "intent": "account.action",
+        "entities": []
+      },
+      {
+        "text": "open an account",
+        "intent": "account.action",
+        "entities": []
+      },
+      {
+        "text": "new account",
+        "intent": "account.action",
+        "entities": []
+      },
+      {
+        "text": "I want to open a new account",
+        "intent": "account.action",
+        "entities": []
+      },
+      {
+        "text": "I want to open an account",
+        "intent": "account.action",
+        "entities": []
+      },
+      {
+        "text": "remove my account",
+        "intent": "account.action",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "remove",
+            "entity": "account-action"
+          }
+        ]
+      },
+      {
+        "text": "stop my account",
+        "intent": "account.action",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "stop",
+            "entity": "account-action"
+          }
+        ]
+      },
+      {
+        "text": "I want to open a new account",
+        "intent": "account.action",
+        "entities": [
+          {
+            "start": 10,
+            "end": 14,
+            "value": "open",
+            "entity": "account-action"
+          }
+        ]
+      },
+      {
+        "text": "close account",
+        "intent": "account.action",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "close",
+            "entity": "account-action"
+          }
+        ]
+      },
+      {
+        "text": "close my account",
+        "intent": "account.action",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "close",
+            "entity": "account-action"
+          }
+        ]
+      },
+      {
+        "text": "what are the steps for opening account",
+        "intent": "account.action",
+        "entities": [
+          {
+            "start": 23,
+            "end": 30,
+            "value": "opening",
+            "entity": "account-action"
+          }
+        ]
+      },
+      {
+        "text": "create a new account",
+        "intent": "account.action",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "create",
+            "entity": "account-action"
+          }
+        ]
+      },
+      {
+        "text": "how do I open an account",
+        "intent": "account.action",
+        "entities": [
+          {
+            "start": 9,
+            "end": 13,
+            "value": "open",
+            "entity": "account-action"
+          }
+        ]
+      },
+      {
+        "text": "open a new account",
+        "intent": "account.action",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "open",
+            "entity": "account-action"
+          }
+        ]
+      },
+      {
+        "text": "open an account",
+        "intent": "account.action",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "open",
+            "entity": "account-action"
+          }
+        ]
+      },
+      {
+        "text": "new account",
+        "intent": "account.action",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "new",
+            "entity": "account-action"
+          }
+        ]
+      },
+      {
+        "text": "account opening",
+        "intent": "account.action",
+        "entities": [
+          {
+            "start": 8,
+            "end": 15,
+            "value": "opening",
+            "entity": "account-action"
+          }
+        ]
+      },
+      {
+        "text": "I want to open an account",
+        "intent": "account.action",
+        "entities": [
+          {
+            "start": 10,
+            "end": 14,
+            "value": "open",
+            "entity": "account-action"
+          }
+        ]
+      },
+      {
+        "text": "savings",
+        "intent": "accountBalance.check",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "savings",
+            "entity": "account"
+          }
+        ]
+      },
+      {
+        "text": "print my account balance",
+        "intent": "accountBalance.check",
+        "entities": []
+      },
+      {
+        "text": "savings account balance",
+        "intent": "accountBalance.check",
+        "entities": [
+          {
+            "start": 0,
+            "end": 15,
+            "value": "savings account",
+            "entity": "account"
+          }
+        ]
+      },
+      {
+        "text": "tell me how much money is there",
+        "intent": "accountBalance.check",
+        "entities": []
+      },
+      {
+        "text": "can you show balance on the card",
+        "intent": "accountBalance.check",
+        "entities": []
+      },
+      {
+        "text": "can you tell me my account balance",
+        "intent": "accountBalance.check",
+        "entities": []
+      },
+      {
+        "text": "how much money do I have on the card",
+        "intent": "accountBalance.check",
+        "entities": []
+      },
+      {
+        "text": "check my balance",
+        "intent": "accountBalance.check",
+        "entities": []
+      },
+      {
+        "text": "fetch my savings account balance",
+        "intent": "accountBalance.check",
+        "entities": [
+          {
+            "start": 9,
+            "end": 24,
+            "value": "savings account",
+            "entity": "account"
+          }
+        ]
+      },
+      {
+        "text": "show me the amount I have in my account",
+        "intent": "accountBalance.check",
+        "entities": []
+      },
+      {
+        "text": "check my bank balance",
+        "intent": "accountBalance.check",
+        "entities": []
+      },
+      {
+        "text": "bank balance",
+        "intent": "accountBalance.check",
+        "entities": []
+      },
+      {
+        "text": "saving account balance",
+        "intent": "accountBalance.check",
+        "entities": [
+          {
+            "start": 0,
+            "end": 14,
+            "value": "saving account",
+            "entity": "account"
+          }
+        ]
+      },
+      {
+        "text": "account balance",
+        "intent": "accountBalance.check",
+        "entities": []
+      },
+      {
+        "text": "money in my account",
+        "intent": "accountBalance.check",
+        "entities": []
+      },
+      {
+        "text": "checking account balance",
+        "intent": "accountBalance.check",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "checking account",
+            "entity": "account"
+          }
+        ]
+      },
+      {
+        "text": "may I know my account balance",
+        "intent": "accountBalance.check",
+        "entities": []
+      },
+      {
+        "text": "check how much money do i have",
+        "intent": "accountBalance.check",
+        "entities": []
+      },
+      {
+        "text": "show my account balance",
+        "intent": "accountBalance.check",
+        "entities": []
+      },
+      {
+        "text": "I want to check my balance",
+        "intent": "accountBalance.check",
+        "entities": []
+      },
+      {
+        "text": "what is the balance in salary account",
+        "intent": "accountBalance.check",
+        "entities": [
+          {
+            "start": 23,
+            "end": 37,
+            "value": "salary account",
+            "entity": "account"
+          }
+        ]
+      },
+      {
+        "text": "and for savings",
+        "intent": "accountBalance.check",
+        "entities": [
+          {
+            "start": 8,
+            "end": 15,
+            "value": "savings",
+            "entity": "account"
+          }
+        ]
+      },
+      {
+        "text": "tell me my account balance",
+        "intent": "accountBalance.check",
+        "entities": []
+      },
+      {
+        "text": "how much money do I have in my account",
+        "intent": "accountBalance.check",
+        "entities": []
+      },
+      {
+        "text": "tell me my bank balance",
+        "intent": "accountBalance.check",
+        "entities": []
+      },
+      {
+        "text": "how much money is available in my bank account",
+        "intent": "accountBalance.check",
+        "entities": []
+      },
+      {
+        "text": "balance",
+        "intent": "accountBalance.check",
+        "entities": []
+      },
+      {
+        "text": "check my account",
+        "intent": "accountBalance.check",
+        "entities": []
+      },
+      {
+        "text": "may I know my savings account balance",
+        "intent": "accountBalance.check",
+        "entities": [
+          {
+            "start": 14,
+            "end": 29,
+            "value": "savings account",
+            "entity": "account"
+          }
+        ]
+      },
+      {
+        "text": "show balance",
+        "intent": "accountBalance.check",
+        "entities": []
+      },
+      {
+        "text": "how much money I have in my savings account",
+        "intent": "accountBalance.check",
+        "entities": [
+          {
+            "start": 28,
+            "end": 43,
+            "value": "savings account",
+            "entity": "account"
+          }
+        ]
+      },
+      {
+        "text": "what is my savings account balance",
+        "intent": "accountBalance.check",
+        "entities": [
+          {
+            "start": 11,
+            "end": 26,
+            "value": "savings account",
+            "entity": "account"
+          }
+        ]
+      },
+      {
+        "text": "can you check my savings as well",
+        "intent": "accountBalance.check",
+        "entities": [
+          {
+            "start": 17,
+            "end": 24,
+            "value": "savings",
+            "entity": "account"
+          }
+        ]
+      },
+      {
+        "text": "show my checking account balance",
+        "intent": "accountBalance.check",
+        "entities": [
+          {
+            "start": 8,
+            "end": 24,
+            "value": "checking account",
+            "entity": "account"
+          }
+        ]
+      },
+      {
+        "text": "I want to know my savings account balance",
+        "intent": "accountBalance.check",
+        "entities": [
+          {
+            "start": 18,
+            "end": 33,
+            "value": "savings account",
+            "entity": "account"
+          }
+        ]
+      },
+      {
+        "text": "can you tell me my checking account balance",
+        "intent": "accountBalance.check",
+        "entities": [
+          {
+            "start": 19,
+            "end": 35,
+            "value": "checking account",
+            "entity": "account"
+          }
+        ]
+      },
+      {
+        "text": "can you check my savings account balance",
+        "intent": "accountBalance.check",
+        "entities": [
+          {
+            "start": 17,
+            "end": 32,
+            "value": "savings account",
+            "entity": "account"
+          }
+        ]
+      },
+      {
+        "text": "ATM Card",
+        "intent": "ATM Card",
+        "entities": []
+      },
+      {
+        "text": "ATM Locations",
+        "intent": "ATM Locations",
+        "entities": []
+      },
+      {
+        "text": "I want to report a bug in balance check",
+        "intent": "Bug Report",
+        "entities": [
+          {
+            "start": 26,
+            "end": 39,
+            "value": "balance check",
+            "entity": "bug-entries"
+          }
+        ]
+      },
+      {
+        "text": "website navigation",
+        "intent": "Bug Report",
+        "entities": []
+      },
+      {
+        "text": "Messed up",
+        "intent": "Bug Report",
+        "entities": []
+      },
+      {
+        "text": "Not working",
+        "intent": "Bug Report",
+        "entities": []
+      },
+      {
+        "text": "I want to report a bug.",
+        "intent": "Bug Report",
+        "entities": []
+      },
+      {
+        "text": "There is a bug in website navigation",
+        "intent": "Bug Report",
+        "entities": [
+          {
+            "start": 18,
+            "end": 36,
+            "value": "website navigation",
+            "entity": "bug-entries"
+          }
+        ]
+      },
+      {
+        "text": "There is a bug in transfer money",
+        "intent": "Bug Report",
+        "entities": [
+          {
+            "start": 18,
+            "end": 32,
+            "value": "transfer money",
+            "entity": "bug-entries"
+          }
+        ]
+      },
+      {
+        "text": "I want to report a bug",
+        "intent": "Bug Report",
+        "entities": []
+      },
+      {
+        "text": "Current Account",
+        "intent": "Current Account",
+        "entities": []
+      },
+      {
+        "text": "DebitCards",
+        "intent": "Debit Cards",
+        "entities": []
+      },
+      {
+        "text": "Debit Cards",
+        "intent": "Debit Cards",
+        "entities": []
+      },
+      {
+        "text": "😬",
+        "intent": "Default Fallback Intent",
+        "entities": []
+      },
+      {
+        "text": "hey",
+        "intent": "Default Welcome Intent",
+        "entities": []
+      },
+      {
+        "text": "what's up",
+        "intent": "Default Welcome Intent",
+        "entities": []
+      },
+      {
+        "text": "hi",
+        "intent": "Default Welcome Intent",
+        "entities": []
+      },
+      {
+        "text": "hello",
+        "intent": "Default Welcome Intent",
+        "entities": []
+      },
+      {
+        "text": "Deposit Rates",
+        "intent": "Deposit Rates",
+        "entities": []
+      },
+      {
+        "text": "Deposits",
+        "intent": "Deposits",
+        "entities": []
+      },
+      {
+        "text": "Master Card",
+        "intent": "MasterCard Debit Card",
+        "entities": []
+      },
+      {
+        "text": "MasterCard Debit Card",
+        "intent": "MasterCard Debit Card",
+        "entities": []
+      },
+      {
+        "text": "More...",
+        "intent": "More",
+        "entities": []
+      },
+      {
+        "text": "Show me more",
+        "intent": "More",
+        "entities": []
+      },
+      {
+        "text": "money due",
+        "intent": "payment.due_amount",
+        "entities": []
+      },
+      {
+        "text": "amount due",
+        "intent": "payment.due_amount",
+        "entities": []
+      },
+      {
+        "text": "how much the bank owe me",
+        "intent": "payment.due_amount",
+        "entities": []
+      },
+      {
+        "text": "how much money i need to pay",
+        "intent": "payment.due_amount",
+        "entities": []
+      },
+      {
+        "text": "total due on my card",
+        "intent": "payment.due_amount",
+        "entities": []
+      },
+      {
+        "text": "payment due amount",
+        "intent": "payment.due_amount",
+        "entities": []
+      },
+      {
+        "text": "payment due",
+        "intent": "payment.due_amount",
+        "entities": []
+      },
+      {
+        "text": "check due payment of credit card",
+        "intent": "payment.due_amount",
+        "entities": []
+      },
+      {
+        "text": "How much payment is due",
+        "intent": "payment.due_amount",
+        "entities": []
+      },
+      {
+        "text": "payment due date",
+        "intent": "payment.due_date",
+        "entities": []
+      },
+      {
+        "text": "When is the payment due?",
+        "intent": "payment.due_date",
+        "entities": []
+      },
+      {
+        "text": "what is the payment due date",
+        "intent": "payment.due_date",
+        "entities": []
+      },
+      {
+        "text": "what are payments deadlines",
+        "intent": "payment.due_date",
+        "entities": []
+      },
+      {
+        "text": "please check my payments deadlines",
+        "intent": "payment.due_date",
+        "entities": []
+      },
+      {
+        "text": "when is the payment due on the my card",
+        "intent": "payment.due_date",
+        "entities": []
+      },
+      {
+        "text": "can you check my payment due date",
+        "intent": "payment.due_date",
+        "entities": []
+      },
+      {
+        "text": "check the payment due date",
+        "intent": "payment.due_date",
+        "entities": []
+      },
+      {
+        "text": "check due date for the payment",
+        "intent": "payment.due_date",
+        "entities": []
+      },
+      {
+        "text": "due date for the payment",
+        "intent": "payment.due_date",
+        "entities": []
+      },
+      {
+        "text": "show due dates",
+        "intent": "payment.due_date",
+        "entities": []
+      },
+      {
+        "text": "Retail Banking",
+        "intent": "Retail Banking",
+        "entities": []
+      },
+      {
+        "text": "Show me retail banking",
+        "intent": "Retail Banking",
+        "entities": []
+      },
+      {
+        "text": "Savings Account",
+        "intent": "Savings Account",
+        "entities": []
+      },
+      {
+        "text": "not interested",
+        "intent": "transfer.money - no",
+        "entities": []
+      },
+      {
+        "text": "I disagree",
+        "intent": "transfer.money - no",
+        "entities": []
+      },
+      {
+        "text": "I don't think so",
+        "intent": "transfer.money - no",
+        "entities": []
+      },
+      {
+        "text": "not really",
+        "intent": "transfer.money - no",
+        "entities": []
+      },
+      {
+        "text": "definitely not",
+        "intent": "transfer.money - no",
+        "entities": []
+      },
+      {
+        "text": "no",
+        "intent": "transfer.money - no",
+        "entities": []
+      },
+      {
+        "text": "thanks but no",
+        "intent": "transfer.money - no",
+        "entities": []
+      },
+      {
+        "text": "don't do it",
+        "intent": "transfer.money - no",
+        "entities": []
+      },
+      {
+        "text": "I don't want that",
+        "intent": "transfer.money - no",
+        "entities": []
+      },
+      {
+        "text": "sure",
+        "intent": "transfer.money - yes",
+        "entities": []
+      },
+      {
+        "text": "I agree",
+        "intent": "transfer.money - yes",
+        "entities": []
+      },
+      {
+        "text": "of course",
+        "intent": "transfer.money - yes",
+        "entities": []
+      },
+      {
+        "text": "confirm",
+        "intent": "transfer.money - yes",
+        "entities": []
+      },
+      {
+        "text": "that's correct",
+        "intent": "transfer.money - yes",
+        "entities": []
+      },
+      {
+        "text": "exactly",
+        "intent": "transfer.money - yes",
+        "entities": []
+      },
+      {
+        "text": "do it",
+        "intent": "transfer.money - yes",
+        "entities": []
+      },
+      {
+        "text": "ok",
+        "intent": "transfer.money - yes",
+        "entities": []
+      },
+      {
+        "text": "I don't mind",
+        "intent": "transfer.money - yes",
+        "entities": []
+      },
+      {
+        "text": "yes",
+        "intent": "transfer.money - yes",
+        "entities": []
+      },
+      {
+        "text": "sounds good",
+        "intent": "transfer.money - yes",
+        "entities": []
+      },
+      {
+        "text": "okay",
+        "intent": "transfer.money - yes",
+        "entities": []
+      },
+      {
+        "text": "transfer",
+        "intent": "transfer.money",
+        "entities": []
+      },
+      {
+        "text": "transfer money from one card to another",
+        "intent": "transfer.money",
+        "entities": []
+      },
+      {
+        "text": "transfer money between my accounts",
+        "intent": "transfer.money",
+        "entities": []
+      },
+      {
+        "text": "can you make a money transfer",
+        "intent": "transfer.money",
+        "entities": []
+      },
+      {
+        "text": "transfer balance between my accounts",
+        "intent": "transfer.money",
+        "entities": []
+      },
+      {
+        "text": "transfer $100 to my savings account",
+        "intent": "transfer.money",
+        "entities": [
+          {
+            "start": 9,
+            "end": 13,
+            "value": "$100",
+            "entity": "amount"
+          },
+          {
+            "start": 20,
+            "end": 27,
+            "value": "savings",
+            "entity": "account_to"
+          }
+        ]
+      },
+      {
+        "text": "send $2000 from savings to my checking account",
+        "intent": "transfer.money",
+        "entities": [
+          {
+            "start": 5,
+            "end": 10,
+            "value": "$2000",
+            "entity": "amount"
+          },
+          {
+            "start": 16,
+            "end": 23,
+            "value": "savings",
+            "entity": "account_from"
+          },
+          {
+            "start": 30,
+            "end": 38,
+            "value": "checking",
+            "entity": "account_from"
+          }
+        ]
+      },
+      {
+        "text": "send $30 from my savings account",
+        "intent": "transfer.money",
+        "entities": [
+          {
+            "start": 5,
+            "end": 8,
+            "value": "$30",
+            "entity": "amount"
+          },
+          {
+            "start": 17,
+            "end": 24,
+            "value": "savings",
+            "entity": "account_from"
+          }
+        ]
+      },
+      {
+        "text": "transfer money from my savings account",
+        "intent": "transfer.money",
+        "entities": [
+          {
+            "start": 23,
+            "end": 30,
+            "value": "savings",
+            "entity": "account_from"
+          }
+        ]
+      },
+      {
+        "text": "card payment from savings to checking",
+        "intent": "transfer.money",
+        "entities": [
+          {
+            "start": 18,
+            "end": 25,
+            "value": "savings",
+            "entity": "account_from"
+          },
+          {
+            "start": 29,
+            "end": 37,
+            "value": "checking",
+            "entity": "account_to"
+          }
+        ]
+      },
+      {
+        "text": "I want to transfer money",
+        "intent": "transfer.money",
+        "entities": []
+      },
+      {
+        "text": "send money into my savings account from checking",
+        "intent": "transfer.money",
+        "entities": [
+          {
+            "start": 19,
+            "end": 34,
+            "value": "savings account",
+            "entity": "account_to"
+          },
+          {
+            "start": 40,
+            "end": 48,
+            "value": "checking",
+            "entity": "account_from"
+          }
+        ]
+      },
+      {
+        "text": "i need to pay for the card from the saving account",
+        "intent": "transfer.money",
+        "entities": [
+          {
+            "start": 36,
+            "end": 50,
+            "value": "saving account",
+            "entity": "account_from"
+          }
+        ]
+      },
+      {
+        "text": "transfer 100 dollars from savings into checking",
+        "intent": "transfer.money",
+        "entities": [
+          {
+            "start": 9,
+            "end": 20,
+            "value": "100 dollars",
+            "entity": "amount"
+          },
+          {
+            "start": 26,
+            "end": 33,
+            "value": "savings",
+            "entity": "account_from"
+          },
+          {
+            "start": 39,
+            "end": 47,
+            "value": "checking",
+            "entity": "account_to"
+          }
+        ]
+      },
+      {
+        "text": "transfer money",
+        "intent": "transfer.money",
+        "entities": []
+      },
+      {
+        "text": "account balance transfer between my accounts",
+        "intent": "transfer.money",
+        "entities": []
+      },
+      {
+        "text": "pay for card from checking",
+        "intent": "transfer.money",
+        "entities": [
+          {
+            "start": 18,
+            "end": 26,
+            "value": "checking",
+            "entity": "account_from"
+          }
+        ]
+      },
+      {
+        "text": "I need to send 2 bucks from checking to savings",
+        "intent": "transfer.money",
+        "entities": [
+          {
+            "start": 15,
+            "end": 22,
+            "value": "2 bucks",
+            "entity": "amount"
+          },
+          {
+            "start": 28,
+            "end": 36,
+            "value": "checking",
+            "entity": "account_from"
+          },
+          {
+            "start": 40,
+            "end": 47,
+            "value": "savings",
+            "entity": "account_to"
+          }
+        ]
+      },
+      {
+        "text": "$5000 should be transferred to my savings account",
+        "intent": "transfer.money",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "$5000",
+            "entity": "amount"
+          },
+          {
+            "start": 34,
+            "end": 41,
+            "value": "savings",
+            "entity": "account_to"
+          }
+        ]
+      },
+      {
+        "text": "I need to send 2 bucks to savings from checking",
+        "intent": "transfer.money",
+        "entities": [
+          {
+            "start": 15,
+            "end": 22,
+            "value": "2 bucks",
+            "entity": "amount"
+          },
+          {
+            "start": 26,
+            "end": 33,
+            "value": "savings",
+            "entity": "account_to"
+          },
+          {
+            "start": 39,
+            "end": 47,
+            "value": "checking",
+            "entity": "account_from"
+          }
+        ]
+      },
+      {
+        "text": "pay for the card from checking account",
+        "intent": "transfer.money",
+        "entities": [
+          {
+            "start": 22,
+            "end": 38,
+            "value": "checking account",
+            "entity": "account_from"
+          }
+        ]
+      },
+      {
+        "text": "send money from checking into my savings account",
+        "intent": "transfer.money",
+        "entities": [
+          {
+            "start": 16,
+            "end": 24,
+            "value": "checking",
+            "entity": "account_from"
+          },
+          {
+            "start": 33,
+            "end": 40,
+            "value": "savings",
+            "entity": "account_to"
+          }
+        ]
+      },
+      {
+        "text": "can you send payment for my card",
+        "intent": "transfer.money",
+        "entities": []
+      },
+      {
+        "text": "transfer to my savings account $6",
+        "intent": "transfer.money",
+        "entities": [
+          {
+            "start": 15,
+            "end": 22,
+            "value": "savings",
+            "entity": "account_to"
+          },
+          {
+            "start": 31,
+            "end": 33,
+            "value": "$6",
+            "entity": "amount"
+          }
+        ]
+      },
+      {
+        "text": "can you help me send some money",
+        "intent": "transfer.money",
+        "entities": []
+      }
+    ],
+    "regex_features": [],
+    "entity_synonyms": [
+      {
+        "value": "checking account",
+        "synonyms": [
+          "checking"
+        ]
+      },
+      {
+        "value": "savings account",
+        "synonyms": [
+          "savings"
+        ]
+      },
+      {
+        "value": "salary account",
+        "synonyms": [
+          "salary"
+        ]
+      },
+      {
+        "value": "Deposit",
+        "synonyms": [
+          "deposit"
+        ]
+      },
+      {
+        "value": "Payment due amount",
+        "synonyms": [
+          "Payment due"
+        ]
+      },
+      {
+        "value": "Auto",
+        "synonyms": [
+          "Car"
+        ]
+      },
+      {
+        "value": "Deposits",
+        "synonyms": [
+          "deposits",
+          "Deposit"
+        ]
+      },
+      {
+        "value": "Restaurants",
+        "synonyms": [
+          "Eating Out"
+        ]
+      },
+      {
+        "value": "Withdrawals",
+        "synonyms": [
+          "withdrawals",
+          "withdrawal"
+        ]
+      },
+      {
+        "value": "Credit",
+        "synonyms": [
+          "credit"
+        ]
+      }
+    ]
+  }
+}

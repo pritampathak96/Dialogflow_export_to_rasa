@@ -1,0 +1,196 @@
+slots:
+  account_from:
+    type: text
+  account-action:
+    type: text
+  account_to:
+    type: text
+  bug-entries:
+    type: text
+  account:
+    type: text
+  amount:
+    type: text
+  aaaaa:
+    type: float
+    min_value: 0
+    max_value: 10
+  balance:
+    type: float
+    min_value: 0
+    max_value: 10
+  Debit:
+    type: float
+    min_value: 0
+    max_value: 10
+  Deposit:
+    type: float
+    min_value: 0
+    max_value: 10
+  D:
+    type: float
+    min_value: 0
+    max_value: 10
+  due_amount:
+    type: float
+    min_value: 0
+    max_value: 10
+  due_date:
+    type: float
+    min_value: 0
+    max_value: 10
+  Retailbanking:
+    type: float
+    min_value: 0
+    max_value: 10
+  transfermoney-yes-followup:
+    type: float
+    min_value: 0
+    max_value: 10
+  transfer:
+    type: float
+    min_value: 0
+    max_value: 10
+  transfermoney-followup:
+    type: float
+    min_value: 0
+    max_value: 10
+  requested_slot:
+    type: unfeaturized
+
+intents:
+ - account.action
+ - accountBalance.check
+ - ATM Card
+ - ATM Locations
+ - Bug Report
+ - Current Account
+ - Debit Cards
+ - Default Fallback Intent
+ - Default Welcome Intent
+ - Deposit Rates
+ - Deposits
+ - MasterCard Debit Card
+ - More
+ - payment.due_amount
+ - payment.due_date
+ - Retail Banking
+ - Savings Account
+ - transfer.money - no
+ - transfer.money - yes
+ - transfer.money
+
+entities:
+  - account_from
+  - account-action
+  - account_to
+  - bug-entries
+  - account
+  - amount
+
+templates:
+ utter_account_open:
+  - "To {account-action} your account you should come to one of our banks in person. Dont forget to bring your ID."
+ utter_account_balance_check:
+  - "Please enter your account password to check balance"
+ utter_account_balance_check_follow_up_account:
+  - "Balance for which account?@account"
+  - "What account do you want the balance for?@account"
+ utter_ATM_Card:
+  - "https://www.primebank.com.bd/index.php/home/ATM_Card"
+ utter_ATM_Locations:
+  - "https://www.primebank.com.bd/index.php/home/atm_locations"
+ utter_Bug_Report:
+  - "Sure. Your issue with {bug-entries} has been logged. Our team will work on it!"
+  - "Thanks for letting us know. You issue with {bug-entries} has been logged."
+  - "You issue with {bug-entries} has been logged. Hope to serve you better the next time."
+ utter_Bug_Report_follow_up_bug_entries:
+  - "Which of the following is not working? @bug-entries"
+  - "Please let us know the error. @bug-entries"
+ utter_Current_Account:
+  - "https://www.primebank.com.bd/index.php/home/Current_Account"
+ utter_Debit_Cards:
+  - "Please choose from the following: @DebitCards"
+ utter_input_unknown:
+  - "Sorry, I didnt get that."
+  - "Sorry, can you say that again?"
+  - "Sorry, I didnt get that. Please get in touch with your local branch to get your queries answered."
+ utter_input_welcome:
+  - "Hello. Welcome to ACME Bank. @ActionSet"
+  - "Hello, thanks for choosing ACME Bank. @ActionSet"
+ utter_Deposit_Rates:
+  - "https://www.primebank.com.bd/index.php/home/Interest_Rates"
+ utter_Deposits:
+  - "Here are the services in deposits: @Deposits"
+ utter_MasterCard_Debit_Card:
+  - "https://www.primebank.com.bd/index.php/home/Master_Debit_Card"
+ utter_More:
+  - "Here are the services we offer... @More"
+ utter_payment_due_amount:
+  - "Please enter your account password to know your due amount"
+ utter_payment_due_date:
+  - "Please enter your account password to know your due date"
+ utter_Retail_Banking:
+  - "Here are the services of Retail Banking: @RetailBanking"
+ utter_Savings_Account:
+  - "https://www.primebank.com.bd/index.php/home/Savings_Account"
+ utter_transfer_money_no:
+  - "Sorry. Can you repeat your transfer request?"
+ utter_transfer_money_yes:
+  - "Please enter your account password to transfer money"
+ utter_transfer_money:
+  - "All right. So, youre transferring {amount} from your {account_from} to a {account_to}. Is that right?"
+ utter_transfer_money_follow_up_account_from:
+  - "Sure. Transfer from which account?@account"
+ utter_transfer_money_follow_up_account_to:
+  - "To which account?@account"
+ utter_transfer_money_follow_up_amount:
+  - "And, how much do you want to transfer?"
+
+actions:
+  - action.account_open
+  - utter_account_open
+  - action.account_balance_check
+  - utter_account_balance_check
+  - utter_account_balance_check_follow_up_account
+  - action.ATM_Card
+  - utter_ATM_Card
+  - action.ATM_Locations
+  - utter_ATM_Locations
+  - action.Bug_Report
+  - utter_Bug_Report
+  - utter_Bug_Report_follow_up_bug_entries
+  - action.Current_Account
+  - utter_Current_Account
+  - action.Debit_Cards
+  - utter_Debit_Cards
+  - action.input_unknown
+  - utter_input_unknown
+  - action.input_welcome
+  - utter_input_welcome
+  - action.Deposit_Rates
+  - utter_Deposit_Rates
+  - action.Deposits
+  - utter_Deposits
+  - action.MasterCard_Debit_Card
+  - utter_MasterCard_Debit_Card
+  - action.More
+  - utter_More
+  - action.payment_due_amount
+  - utter_payment_due_amount
+  - action.payment_due_date
+  - utter_payment_due_date
+  - action.Retail_Banking
+  - utter_Retail_Banking
+  - action.Savings_Account
+  - utter_Savings_Account
+  - action.transfer_money_no
+  - utter_transfer_money_no
+  - action.transfer_money_yes
+  - utter_transfer_money_yes
+  - action.transfer_money
+  - utter_transfer_money
+  - utter_transfer_money_follow_up_account_from
+  - utter_transfer_money_follow_up_account_to
+  - utter_transfer_money_follow_up_amount
+

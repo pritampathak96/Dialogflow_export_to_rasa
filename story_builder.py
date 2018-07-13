@@ -109,6 +109,12 @@ def write_stories_file(df_directory = "dialogflow",
 
         a_name = command_sanitizer(intent.action)
         out_string += ("\t- {}\n".format(a_name))
+
+        story_count += 1
+        out_string += ("## Generated Story {}\n".format(story_count))
+        out_string += ("* {}".format(intent.name))
+        out_string += "\n"
+        out_string += ("\t- {}\n".format(a_name))
         #print("\tIn Contexts: {}".format(len(intent.context_in)))
 
     with open(stories_file,'w') as outfile:

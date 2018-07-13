@@ -18,6 +18,7 @@ def build(df_directory):
             data = "\n"
             data += action_data
             data = data.replace("<action_name>",command_sanitizer(intent.action))
+            data = data.replace("<index_name>",command_sanitizer(intent.name))
             data += "\n"
             outfile.write(data)
 
